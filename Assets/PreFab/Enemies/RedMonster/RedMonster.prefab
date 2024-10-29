@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6318541393263449802}
   - component: {fileID: 1708103314240438087}
   - component: {fileID: 3021281261654087539}
+  - component: {fileID: -6932527456388570735}
   m_Layer: 0
   m_Name: RedMonster
   m_TagString: Enemy
@@ -160,6 +161,9 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   hitBox: {fileID: 6318541393263449802}
+  isDashable: 0
+  dashSpeed: 1.5
+  dashTiggerRadius: 2
   attack: {fileID: 7303800923543105076, guid: b93a000e491d31645989a54801772c07, type: 3}
 --- !u!95 &3021281261654087539
 Animator:
@@ -181,6 +185,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-6932527456388570735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84918443102406609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e8663d3c36184747b302034c0d3e07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyComponent: {fileID: 0}
+  cooldownLengthForRangedAttack: 2
+  energyBall: {fileID: 3229630067867046176, guid: ea55eba30b84b9d4bbaf45a860c0e111, type: 3}
 --- !u!1 &3336381578671037882
 GameObject:
   m_ObjectHideFlags: 0

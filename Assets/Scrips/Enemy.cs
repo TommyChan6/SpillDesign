@@ -71,6 +71,7 @@ public class Enemy : MonoBehaviour
         if (isDying != false) {
             animator.SetBool("isMoving", false);
         } else {
+            // set a public variable isChargingAttack, if true, stops the movement, set animator isMoving to false                         < -----------------------------
             movementInput = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y);
             movementInput.Normalize();
             if (movementInput != Vector2.zero){
