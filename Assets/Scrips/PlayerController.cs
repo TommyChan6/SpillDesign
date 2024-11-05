@@ -24,6 +24,18 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
+
+    // Scores
+    public int numberOfSlimesKilled = 0;
+    public int slimeScore = 2;
+    public int numberOfRedMonsterKilled = 0;
+    public int RedMonsterScore = 10;
+    public int numberOfSprinterKilled = 0;
+    public int sprinterScore = 5;
+    
+
+    public LevelFinishScreen levelFinishedPanel;
+
     public float HealthPoints {
         set {
             healthPoints = value;
@@ -111,7 +123,10 @@ public class PlayerController : MonoBehaviour
 
     public void Defeated(){
         print("Died");
-        SceneManager.LoadSceneAsync(0);
+        if (levelFinishedPanel != null) {
+            levelFinishedPanel.FinishLevel();
+        }
+        //SceneManager.LoadSceneAsync(0);
     }
 
     public void TakeDamage(float damageValue) {

@@ -160,7 +160,9 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  player: {fileID: 0}
   hitBox: {fileID: 6318541393263449802}
+  enemyType: redMonster
   isDashable: 0
   dashSpeed: 1.5
   dashTiggerRadius: 2

@@ -19,13 +19,13 @@ public class Enemy : MonoBehaviour
     Vector2 movementInput;
     Rigidbody2D rb;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
-    GameObject player;
+    public GameObject player;
     private bool isDying = false;
     public Collider2D hitBox;
     private SpriteRenderer spriteRenderer;
     
-    
-    
+    //public int enemyKilledScore = 0;
+    public string enemyType = "";
 
     // Start is called before the first frame update
     void Start()
@@ -174,6 +174,18 @@ public class Enemy : MonoBehaviour
                 int randomIndex = UnityEngine.Random.Range(0, dropList.Count); // Get a random index
                 GameObject selectedObject = dropList[randomIndex]; // Select the GameObject
                 Instantiate(selectedObject, transform.position, Quaternion.identity);
+            }
+        }
+        // Update enemy killed score in player
+        PlayerController playerController = player.GetComponent<PlayerController>();
+        if (playerController != null) {
+            if (enemyType == "slime") {
+                playerController.numberOfSlimesKilled += 1;
+                print("killed a slime");
+            } else if (enemyType == "redMonster") {
+                playerController.numberOfRedMonsterKilled += 1;
+            } else if (enemyType == "sprinter") {
+                playerController.numberOfSprinterKilled += 1;
             }
         }
         Destroy(gameObject);

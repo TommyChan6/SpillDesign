@@ -295,7 +295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1841966584
 Transform:
   m_ObjectHideFlags: 0
@@ -676,6 +676,13 @@ MonoBehaviour:
   hitBox: {fileID: 1389344520}
   weaponController: {fileID: 15026767}
   stamina: {fileID: 0}
+  numberOfSlimesKilled: 0
+  slimeScore: 2
+  numberOfRedMonsterKilled: 0
+  RedMonsterScore: 10
+  numberOfSprinterKilled: 0
+  sprinterScore: 5
+  levelFinishedPanel: {fileID: 0}
   heart1: {fileID: 0}
   heart2: {fileID: 0}
   heart3: {fileID: 0}

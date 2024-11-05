@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using System.Threading.Tasks;
+using UnityEngine.UI;
 
 public class LevelFinishScreen : MonoBehaviour
 {
@@ -24,6 +25,21 @@ public class LevelFinishScreen : MonoBehaviour
 
     public Animator transition;
     public float transitionTime = 1f;
+    public GameObject player;
+    public Text scoreText;
+
+    void Start() {
+        player = GameObject.FindWithTag("Player");
+        PlayerController playerController = player.GetComponent<PlayerController>();
+        if (playerController != null) {
+            if (scoreText != null) {
+                scoreText.text = $"Slime {playerController.numberOfSlimesKilled}\nRed Monster {playerController.numberOfRedMonsterKilled}\nSprinter {playerController.numberOfSprinterKilled}\nFinal Score {(playerController.numberOfSlimesKilled*playerController.slimeScore)+(playerController.numberOfRedMonsterKilled*playerController.RedMonsterScore)+(playerController.numberOfSprinterKilled*playerController.sprinterScore)}\nGrade B";
+            }
+        } else {
+            print("error");
+        } 
+        
+    }
 
     public async void FinishLevel() {
         finishScreen.SetActive(true);

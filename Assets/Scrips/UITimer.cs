@@ -64,4 +64,8 @@ public class UITimer : MonoBehaviour
             levelFinishedPanel.FinishLevel();
         }
     }
+
+    public float GetTimeRemaining() {
+        return remainingTime;
+    }
 }

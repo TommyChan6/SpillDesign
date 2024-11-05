@@ -11,7 +11,8 @@ public class MenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     // private Vector2 originalSize;
     // Start is called before the first frame update
     public Text text;
-    private int originalFontSize = 60;
+    public int originalFontSize = 60;
+    public int hoverFontSize = 80;
 
     void Start()
     {
@@ -33,7 +34,7 @@ public class MenuButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         // transform.localScale = newScale;
         // print("dshfjsdhf");
         // rectTransform.sizeDelta = originalSize * 1.2f;
-        text.fontSize = 80;
+        text.fontSize = hoverFontSize;
     }
 
     // This is called when the pointer exits the button
