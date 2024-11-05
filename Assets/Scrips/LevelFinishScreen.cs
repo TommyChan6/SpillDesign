@@ -27,13 +27,16 @@ public class LevelFinishScreen : MonoBehaviour
     public float transitionTime = 1f;
     public GameObject player;
     public Text scoreText;
+    public UITimer timerUI;
 
     void Start() {
         player = GameObject.FindWithTag("Player");
         PlayerController playerController = player.GetComponent<PlayerController>();
         if (playerController != null) {
             if (scoreText != null) {
-                scoreText.text = $"Slime {playerController.numberOfSlimesKilled}\nRed Monster {playerController.numberOfRedMonsterKilled}\nSprinter {playerController.numberOfSprinterKilled}\nFinal Score {(playerController.numberOfSlimesKilled*playerController.slimeScore)+(playerController.numberOfRedMonsterKilled*playerController.RedMonsterScore)+(playerController.numberOfSprinterKilled*playerController.sprinterScore)}\nGrade B";
+                if (timerUI != null) {
+                    scoreText.text = $"Slime {playerController.numberOfSlimesKilled}\nRed Monster {playerController.numberOfRedMonsterKilled}\nSprinter {playerController.numberOfSprinterKilled}\nFinal Score {(playerController.numberOfSlimesKilled*playerController.slimeScore)+(playerController.numberOfRedMonsterKilled*playerController.RedMonsterScore)+(playerController.numberOfSprinterKilled*playerController.sprinterScore)-(timerUI.GetTimeRemaining()*10)}\nGrade B";
+                }
             }
         } else {
             print("error");

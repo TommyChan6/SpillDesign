@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour
     public int RedMonsterScore = 10;
     public int numberOfSprinterKilled = 0;
     public int sprinterScore = 5;
-    
 
     public LevelFinishScreen levelFinishedPanel;
 

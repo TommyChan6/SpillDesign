@@ -1153,6 +1153,7 @@ MonoBehaviour:
   transitionTime: 1
   player: {fileID: 0}
   scoreText: {fileID: 18219745}
+  timerUI: {fileID: 865611888}
 --- !u!1 &927890906
 GameObject:
   m_ObjectHideFlags: 0
