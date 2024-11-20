@@ -27,6 +27,8 @@ public class Enemy : MonoBehaviour
     //public int enemyKilledScore = 0;
     public string enemyType = "";
 
+    //private EventInstance enemyHit;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,7 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         player = GameObject.FindWithTag("Player");
+        //enemyHit = AudioManager.instance.CreateInstance(FMODEvents.instance.enemyHit);
         if (drop1 != null) {
             dropList.Add(drop1);
         }
@@ -155,7 +158,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damageValue) {
         HealthPoints -= damageValue;
         // Here we can calculate other stats like defense and shield etc
-        
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.enemyHit, this.transform.position);
     }
 
     public void Defeated() {

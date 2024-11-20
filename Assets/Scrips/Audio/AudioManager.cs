@@ -4,10 +4,14 @@ using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
 
+
+
 public class AudioManager : MonoBehaviour
 {
     private List<EventInstance> eventInstances;
     public static AudioManager instance {get; private set;}
+    private EventInstance backgroundMusic;
+    public bool hasBGM = false;
 
     private void Awake() {
         if (instance != null) {
@@ -16,10 +20,20 @@ public class AudioManager : MonoBehaviour
         instance = this;
 
         eventInstances = new List<EventInstance>();
+
+        if (hasBGM) {
+            instance.PlayBGM(FMODEvents.instance.BGM);
+        }
     }
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos) {
         RuntimeManager.PlayOneShot(sound, worldPos);
+    }
+
+    public void PlayBGM(EventReference sound) {
+        backgroundMusic = instance.CreateInstance(sound);
+        backgroundMusic.start();
+        backgroundMusic.release();
     }
 
     public EventInstance CreateInstance(EventReference eventReference) {

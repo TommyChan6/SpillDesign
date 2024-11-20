@@ -10,6 +10,10 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference playerFire {get; private set;}
     [field: Header("WeaponCollected SFX")]
     [field: SerializeField] public EventReference weaponCollect {get; private set;}
+    [field: Header("Enemy SFX")]
+    [field: SerializeField] public EventReference enemyHit {get; private set;}
+    [field: Header("BGM")]
+    [field: SerializeField] public EventReference BGM {get; private set;}
 
     public static FMODEvents instance {get; private set;}
 

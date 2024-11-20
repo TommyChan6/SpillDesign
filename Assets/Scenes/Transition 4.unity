@@ -1060,6 +1060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d015929d54d7082498fdb4f45eeeae47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasBGM: 0
 --- !u!1 &342125612
 GameObject:
   m_ObjectHideFlags: 0
@@ -6186,6 +6187,20 @@ MonoBehaviour:
       Data3: -1464720999
       Data4: -198621340
     Path: event:/WeaponCollected
+  <enemyHit>k__BackingField:
+    Guid:
+      Data1: -205939545
+      Data2: 1180317667
+      Data3: -1632255091
+      Data4: 692467079
+    Path: event:/enemyHit
+  <BGM>k__BackingField:
+    Guid:
+      Data1: 147400591
+      Data2: 1297499749
+      Data3: 684527295
+      Data4: -867240136
+    Path: event:/BGM1
 --- !u!43 &962663824
 Mesh:
   m_ObjectHideFlags: 0
