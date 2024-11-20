@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnergyBall : MonoBehaviour
 {
     public float damage = 1f;
-    public float speed = 3f;
+    public float speed = 4f;
     public float timeToDisappear;
     public Vector2 direction;
     Rigidbody2D rb;

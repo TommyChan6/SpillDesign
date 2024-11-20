@@ -174,7 +174,7 @@ MonoBehaviour:
   drop1: {fileID: 5051093706587134312, guid: e733f82c14f778c4f98a4c37f6fe4bbf, type: 3}
   drop2: {fileID: 3956639112926053801, guid: f717976d73f57cd4494fc8a489c32bac, type: 3}
   drop3: {fileID: 3758309300222360, guid: 81f019ca9dd02704cbe68b348bcc8e4a, type: 3}
-  dropRate: 0.05
+  dropRate: 0.03
   collisionOffset: 0.05
   movementFilter:
     useTriggers: 0

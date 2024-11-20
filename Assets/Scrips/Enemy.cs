@@ -100,10 +100,10 @@ public class Enemy : MonoBehaviour
                         print("start actual");
                         currentMoveDirection = movementInput;
                         isStartDashing = false;
-                        moveSpeed = 4f;
+                        moveSpeed = 3f;
                     } else {
                         // currentMoveDirection remains the same
-                        if(dashTimer >= 1f) {
+                        if(dashTimer >= 0.4f) {
                             // End of dash
                             isDashing = false;
                             moveSpeed = 0.6f;
@@ -197,13 +197,13 @@ public class Enemy : MonoBehaviour
     public GameObject attack;
     //private bool notAttacked = true;
     private float timer = 0f;
-    private float attackCooldown = 1f;
+    private float attackCooldown = 0.4f;
     // Generate attack collider for 1 update and cooldown 0.5 sec
     public void Attack() {
-
         timer += Time.deltaTime;
         if (timer >= attackCooldown) {
             Instantiate(attack, transform.position, Quaternion.identity);
+            print("attacked");
             timer = 0f;
             // if(notAttacked) {
             //         attack.GetComponent<Collider2D>().enabled = true;

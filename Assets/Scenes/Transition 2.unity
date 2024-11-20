@@ -1673,7 +1673,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d015929d54d7082498fdb4f45eeeae47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasBGM: 0
+  hasBGM1: 0
+  hasBGM2: 0
+  hasOutdoor: 0
+  hasShip: 0
 --- !u!1 &342125612
 GameObject:
   m_ObjectHideFlags: 0
@@ -6486,6 +6489,27 @@ MonoBehaviour:
       Data3: 684527295
       Data4: -867240136
     Path: event:/BGM1
+  <BGM2>k__BackingField:
+    Guid:
+      Data1: -987292230
+      Data2: 1336676067
+      Data3: -809321298
+      Data4: -36288221
+    Path: event:/BGM2
+  <Outdoor>k__BackingField:
+    Guid:
+      Data1: -603558775
+      Data2: 1168885426
+      Data3: -1446155389
+      Data4: -1087950066
+    Path: event:/Outdoor
+  <Ship>k__BackingField:
+    Guid:
+      Data1: -1628123949
+      Data2: 1077817169
+      Data3: 1844773566
+      Data4: 783758972
+    Path: event:/Ship
 --- !u!43 &918467168
 Mesh:
   m_ObjectHideFlags: 0

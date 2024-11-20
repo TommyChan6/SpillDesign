@@ -64,5 +64,9 @@ public class PauseMenu : MonoBehaviour
         {
             ResumeGame();
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ResumeGame();
+        }
     }
 }

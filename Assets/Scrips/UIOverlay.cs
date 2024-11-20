@@ -15,5 +15,11 @@ public class UIOverlay : MonoBehaviour
                 pauseMenu.PauseGame();
             }
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (pauseMenu != null) {
+                pauseMenu.PauseGame();
+            }
+        }
     }
 }

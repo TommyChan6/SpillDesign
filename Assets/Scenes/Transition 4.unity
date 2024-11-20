@@ -505,6 +505,7 @@ MonoBehaviour:
   cam: {fileID: 519420031}
   enemy: {fileID: 3874134867645406843, guid: cb185eacdf717584e8ebf8c79c3a3255, type: 3}
   interval: 0.5
+  isGrowingGeneration: 0
 --- !u!212 &239931396
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1060,7 +1061,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d015929d54d7082498fdb4f45eeeae47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasBGM: 0
+  hasBGM1: 0
+  hasBGM2: 0
+  hasOutdoor: 0
+  hasShip: 0
 --- !u!1 &342125612
 GameObject:
   m_ObjectHideFlags: 0
@@ -5346,6 +5350,82 @@ MonoBehaviour:
   m_ShapePathHash: 1350330884
   m_Mesh: {fileID: 1509191708}
   m_InstanceId: 233392
+--- !u!1 &742870144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 742870145}
+  - component: {fileID: 742870147}
+  - component: {fileID: 742870146}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &742870145
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742870144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6079625060441877663}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -468, y: -240}
+  m_SizeDelta: {x: 331, y: 286.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &742870146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742870144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 73ba01cb0192e374ca7168e818bbf90b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &742870147
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742870144}
+  m_CullTransparentMesh: 1
 --- !u!1 &756067519
 GameObject:
   m_ObjectHideFlags: 0
@@ -6201,6 +6281,27 @@ MonoBehaviour:
       Data3: 684527295
       Data4: -867240136
     Path: event:/BGM1
+  <BGM2>k__BackingField:
+    Guid:
+      Data1: -987292230
+      Data2: 1336676067
+      Data3: -809321298
+      Data4: -36288221
+    Path: event:/BGM2
+  <Outdoor>k__BackingField:
+    Guid:
+      Data1: -603558775
+      Data2: 1168885426
+      Data3: -1446155389
+      Data4: -1087950066
+    Path: event:/Outdoor
+  <Ship>k__BackingField:
+    Guid:
+      Data1: -1628123949
+      Data2: 1077817169
+      Data3: 1844773566
+      Data4: 783758972
+    Path: event:/Ship
 --- !u!43 &962663824
 Mesh:
   m_ObjectHideFlags: 0
@@ -6731,6 +6832,7 @@ MonoBehaviour:
   cam: {fileID: 519420031}
   enemy: {fileID: 84918443102406609, guid: 0d981a968e760894a87a8e92282f3887, type: 3}
   interval: 3
+  isGrowingGeneration: 0
 --- !u!212 &1046107742
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75616,6 +75718,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+--- !u!224 &6079625060441877663 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 397684113263876373, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+  m_PrefabInstance: {fileID: 6079625060441877662}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6322386188724465989
 PrefabInstance:
   m_ObjectHideFlags: 0

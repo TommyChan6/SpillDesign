@@ -130,6 +130,8 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float damageValue) {
         HealthPoints -= damageValue;
+        print(HealthPoints);
+        print("damageTaken");
         // Here we can calculate other stats like defense and shield ect
         ResetHealthUI();
     }

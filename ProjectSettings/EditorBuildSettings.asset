@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Transition 1.unity
     guid: 331d5d0700c720b4c9d9fec047134fff
   - enabled: 1
+    path: Assets/Scenes/Tutorial 1.unity
+    guid: 12119e0ae4843e4438341c84b2e62c29
+  - enabled: 1
+    path: Assets/Scenes/Tutorial 2.unity
+    guid: 6cd9c2641ee523d42bd4dc5a1c7ee5b7
+  - enabled: 1
     path: Assets/Scenes/Level 1 final.unity
     guid: ace15c40b10082f499516a550c3d2a6d
   - enabled: 1

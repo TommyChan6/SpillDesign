@@ -10,10 +10,12 @@ public class EnemyGeneration : MonoBehaviour
     private float timer = 0f;  // Timer to keep track of time
     public float interval = 0.1f;
     private SpriteRenderer spriteRenderer;
+    public bool isGrowingGeneration = false;
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        StartCoroutine(RunEveryTenSeconds());
 
         // Calculate the bounds of the object
         // Bounds bounds = spriteRenderer.bounds;
@@ -23,6 +25,18 @@ public class EnemyGeneration : MonoBehaviour
         // float right = bounds.max.x;
         // float top = bounds.max.y;
         // float bottom = bounds.min.y;
+    }
+
+    IEnumerator RunEveryTenSeconds()
+    {
+        while (isGrowingGeneration)
+        {
+            // Code to run every 10 seconds
+            interval = interval * 0.96f;
+            
+            // Wait for 10 seconds
+            yield return new WaitForSeconds(10f);
+        }
     }
 
     // Update is called once per frame

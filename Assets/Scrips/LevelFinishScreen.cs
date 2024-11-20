@@ -35,7 +35,7 @@ public class LevelFinishScreen : MonoBehaviour
         if (playerController != null) {
             if (scoreText != null) {
                 if (timerUI != null) {
-                    scoreText.text = $"Slime {playerController.numberOfSlimesKilled}\nRed Monster {playerController.numberOfRedMonsterKilled}\nSprinter {playerController.numberOfSprinterKilled}\nFinal Score {(playerController.numberOfSlimesKilled*playerController.slimeScore)+(playerController.numberOfRedMonsterKilled*playerController.RedMonsterScore)+(playerController.numberOfSprinterKilled*playerController.sprinterScore)-(timerUI.GetTimeRemaining()*10)}\nGrade B";
+                    scoreText.text = $"Slimes killed {playerController.numberOfSlimesKilled}\nFurry Monster killed {playerController.numberOfRedMonsterKilled}\nSprinter killed {playerController.numberOfSprinterKilled}\nFinal Score {(playerController.numberOfSlimesKilled*playerController.slimeScore)+(playerController.numberOfRedMonsterKilled*playerController.RedMonsterScore)+(playerController.numberOfSprinterKilled*playerController.sprinterScore)-(timerUI.GetTimeRemaining()*5)}\n";
                 }
             }
         } else {
@@ -66,7 +66,7 @@ public class LevelFinishScreen : MonoBehaviour
     public void ContinueLevel() {
         int currentLevel = SceneManager.GetActiveScene().buildIndex;
         print("clicked continue level!");
-        if (currentLevel == 10) {
+        if (currentLevel == 20) {
             // Completed last level, show ending animation?
             ReturnToMainMenu();  // <----------------- temp
         } else {
