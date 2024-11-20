@@ -75455,6 +75455,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2538482690154196391, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+      propertyPath: m_Text
+      value: "After defeating the last enemy outside, a blinding light \nsuddenly
+        engulfs you, pulling you into the mothership.\r\n\nDisoriented,  you hear
+        Fido\u2019s bark echoing somewhere ahead. \nArmed and determined, you sprint
+        towards the sound. \nAt the end of the hallway, a towering alien blocks your
+        path, \nits massive purple sword flickering with energy. \nYou tighten your
+        grip on your weapon, ready to fight for Fido.\r\n\n\nclick anywhere to continue"
+      objectReference: {fileID: 0}
     - target: {fileID: 2887036547510015213, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
       propertyPath: m_IsActive
       value: 1

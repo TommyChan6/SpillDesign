@@ -75418,6 +75418,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2538482690154196391, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+      propertyPath: m_Text
+      value: "You wake up in the middle of the night to the sound of barking. \nYour
+        dog, Fido, isn\u2019t sleeping beside you like usual. \nThe muffled barks
+        come from the living room. You stumble down the hallway and turn on the light.\r\n\r\nStanding
+        in the middle of the room is an alien with glowing eyes, holding Fido in
+        its arms. \nThe alien turns, and runs for the door. As you rush to stop it,
+        more aliens emerge from the shadows.Outnumbered, you grit your teeth and
+        clench your fists.\r\n\r\nYou won\u2019t let them take Fido without a fight.\r\n\n\nclick
+        anywhere to continue"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538482690154196391, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2887036547510015213, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
       propertyPath: m_IsActive
       value: 1

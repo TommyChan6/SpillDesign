@@ -75418,6 +75418,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2538482690154196391, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+      propertyPath: m_Text
+      value: "The last alien drops, and you spin around, racing outside after \nthe
+        one that took Fido. Your garden is swarming with aliens, \nstaring at you
+        with glowing eyes as you sweep your flashlight across. \r\n\r\nYou have to
+        save Fido. \r\n\r\nA new wave of aliens charges, and you grip your \nweapon,
+        ready to kill every alien standing between you and Fido.\r\n\n\nclick anywhere
+        to continue"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538482690154196391, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 2887036547510015213, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
       propertyPath: m_IsActive
       value: 1

@@ -526,6 +526,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 884221272}
+  originalFontSize: 60
+  hoverFontSize: 80
 --- !u!1 &566592550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,6 +1107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 58305373}
+  originalFontSize: 60
+  hoverFontSize: 80
 --- !u!1 &2071616173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,7 +1180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Title of the game
+  m_Text: Fight for Fido
 --- !u!222 &2071616176
 CanvasRenderer:
   m_ObjectHideFlags: 0

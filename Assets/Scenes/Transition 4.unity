@@ -75466,6 +75466,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2538482690154196391, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+      propertyPath: m_Text
+      value: "With a final strike, the alien falls, and you rush to Fido, \nscooping
+        him into your arms. His excited barks and \nwagging tail reminds you why
+        you\u2019d do anything for him. \nHolding him close, you make your way out
+        of the mothership, \nthe chaos behind you fading. Once safely outside, you
+        take a deep breath \nand head home, knowing that no matter what, you'd always
+        fight for Fido.\n\nThe game is over, \nclick anywhere to return to home"
+      objectReference: {fileID: 0}
     - target: {fileID: 2887036547510015213, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
       propertyPath: m_IsActive
       value: 1
