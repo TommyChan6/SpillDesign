@@ -1161,6 +1161,7 @@ MonoBehaviour:
   cam: {fileID: 519420031}
   enemy: {fileID: 3874134867645406843, guid: cb185eacdf717584e8ebf8c79c3a3255, type: 3}
   interval: 0.5
+  isGrowingGeneration: 0
 --- !u!212 &239931396
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1675,6 +1676,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasBGM1: 0
   hasBGM2: 0
+  hasBGM3: 0
+  hasBGM4: 0
   hasOutdoor: 0
   hasShip: 0
 --- !u!1 &342125612
@@ -6496,6 +6499,20 @@ MonoBehaviour:
       Data3: -809321298
       Data4: -36288221
     Path: event:/BGM2
+  <BGM3>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <BGM4>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   <Outdoor>k__BackingField:
     Guid:
       Data1: -603558775
@@ -7204,6 +7221,7 @@ MonoBehaviour:
   cam: {fileID: 519420031}
   enemy: {fileID: 84918443102406609, guid: 0d981a968e760894a87a8e92282f3887, type: 3}
   interval: 3
+  isGrowingGeneration: 0
 --- !u!212 &1046107742
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75557,6 +75575,18 @@ PrefabInstance:
     - target: {fileID: 6079625060403591330, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079625060403591332, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079625060403591332, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079625060403591332, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 6079625060403591333, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
       propertyPath: m_Camera

@@ -32300,7 +32300,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 865611888, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
       propertyPath: countdownTime
-      value: 10
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 2887036547510015213, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
       propertyPath: m_IsActive
@@ -32397,6 +32397,22 @@ PrefabInstance:
     - target: {fileID: 6079625060403591330, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079625060403591332, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079625060403591332, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079625060403591332, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079625060403591332, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 6079625060403591333, guid: 0f88e35fb46baeb4f9f35f41db5c133e, type: 3}
       propertyPath: m_Camera

@@ -61,7 +61,7 @@ public class UITimer : MonoBehaviour
         Debug.Log("Timer has finished!");
         // Add additional logic here for when the timer finishes
         if (levelFinishedPanel != null) {
-            levelFinishedPanel.FinishLevel();
+            levelFinishedPanel.FinishLevel("complete");
         }
     }
 

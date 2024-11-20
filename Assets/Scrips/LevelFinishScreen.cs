@@ -23,10 +23,14 @@ public class LevelFinishScreen : MonoBehaviour
     [SerializeField] CanvasGroup titleCanvasGroup;
     [SerializeField] CanvasGroup contentCanvasGroup;
 
+    public GameObject continueButton;
+    public GameObject restartButton;
+
     public Animator transition;
-    public float transitionTime = 1f;
+    public float transitionTime = 0.1f;
     public GameObject player;
     public Text scoreText;
+    public Text titleText;
     public UITimer timerUI;
 
     void Start() {
@@ -44,8 +48,17 @@ public class LevelFinishScreen : MonoBehaviour
         
     }
 
-    public async void FinishLevel() {
+    public async void FinishLevel(string finishState) {
         finishScreen.SetActive(true);
+        if (finishState == "died") {
+            continueButton.SetActive(false);
+            restartButton.SetActive(true);
+            titleText.text = "you died";
+        } else {
+            continueButton.SetActive(true);
+            restartButton.SetActive(false);
+            titleText.text = "level complete";
+        }
         Time.timeScale = 0;
         await FinishLevelIntro();
     }
@@ -63,6 +76,11 @@ public class LevelFinishScreen : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public void RestartLevel() {
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
+    }
+
     public void ContinueLevel() {
         int currentLevel = SceneManager.GetActiveScene().buildIndex;
         print("clicked continue level!");
@@ -70,15 +88,15 @@ public class LevelFinishScreen : MonoBehaviour
             // Completed last level, show ending animation?
             ReturnToMainMenu();  // <----------------- temp
         } else {
-            StartCoroutine(LoadLevel(currentLevel + 1));
             Time.timeScale = 1;
+            StartCoroutine(LoadLevel(currentLevel + 1));
         }
     }
 
     IEnumerator LoadLevel(int levelIndex) {
         transition.SetTrigger("Start");
 
-        yield return new WaitForSeconds(transitionTime);
+        yield return null; //new WaitForSeconds(transitionTime);
 
         SceneManager.LoadSceneAsync(levelIndex);
     }

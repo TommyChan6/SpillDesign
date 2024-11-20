@@ -32,7 +32,7 @@ public class EnemyGeneration : MonoBehaviour
         while (isGrowingGeneration)
         {
             // Code to run every 10 seconds
-            interval = interval * 0.96f;
+            interval = interval * 0.9f;
             
             // Wait for 10 seconds
             yield return new WaitForSeconds(10f);

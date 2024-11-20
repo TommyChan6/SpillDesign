@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
     public void Defeated(){
         print("Died");
         if (levelFinishedPanel != null) {
-            levelFinishedPanel.FinishLevel();
+            levelFinishedPanel.FinishLevel("died");
         }
         //SceneManager.LoadSceneAsync(0);
     }
