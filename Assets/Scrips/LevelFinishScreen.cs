@@ -65,7 +65,8 @@ public class LevelFinishScreen : MonoBehaviour
 
     public void ContinueLevel() {
         int currentLevel = SceneManager.GetActiveScene().buildIndex;
-        if (currentLevel == 3) {
+        print("clicked continue level!");
+        if (currentLevel == 10) {
             // Completed last level, show ending animation?
             ReturnToMainMenu();  // <----------------- temp
         } else {

@@ -5,19 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: e0b9360cff70cf645b1712b49e446657
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: 3c667c50a4913164c8ccb3921b5f5175
+    path: Assets/Scenes/Transition 1.unity
+    guid: 331d5d0700c720b4c9d9fec047134fff
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Level 1 final.unity
+    guid: ace15c40b10082f499516a550c3d2a6d
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
-    guid: 6495e098e57dc694188a3d5b64cf7c04
+    path: Assets/Scenes/Transition 2.unity
+    guid: 3f1017c762e00424bb5313741f4f0fea
+  - enabled: 1
+    path: Assets/Scenes/Level 2 final.unity
+    guid: 095371fa2b5a58040a15929ecafaed46
+  - enabled: 1
+    path: Assets/Scenes/Transition 3.unity
+    guid: 1a6915c4add717541babe09c417189da
+  - enabled: 1
+    path: Assets/Scenes/Level 3 final.unity
+    guid: 178e52911ba968e4391ddff28d55b48a
+  - enabled: 1
+    path: Assets/Scenes/Transition 4.unity
+    guid: a8350ec50a107274bb04f8cd1759a178
   m_configObjects: {}
